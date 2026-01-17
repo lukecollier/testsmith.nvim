@@ -1,0 +1,28 @@
+[package]
+name = "testsmith-nvim"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+clap = { version = "4.5", features = ["derive", "cargo"] }
+anyhow = "1.0"
+thiserror = "1.0"
+path-clean = "1.0"
+regex = "1.10"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+[dev-dependencies]
+assert_fs = "1.1"
+predicates = "3.1"
+tempfile = "3.10"
+
+# Build as both CLI binary and FFI library
+[[bin]]
+name = "testsmith-nvim"
+path = "src/main.rs"
+
+[lib]
+name = "testsmith_nvim"
+crate-type = ["rlib", "cdylib"]  # Build as both Rust library and C-compatible dynamic library
+path = "src/lib.rs"
