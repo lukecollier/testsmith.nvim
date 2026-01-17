@@ -39,7 +39,7 @@ Add to your Neovim plugin manager (lazy.nvim):
 }
 ```
 
-Or see [PLUGIN_README.md](PLUGIN_README.md) for other installation methods.
+Or see [PLUGIN_README.md](markdown/PLUGIN_README.md) for other installation methods.
 
 ## Features
 
@@ -162,7 +162,7 @@ require("testsmith").setup({
 })
 ```
 
-For more examples, see `examples/nvim-config.lua`.
+For more details, see [markdown/DEVELOPMENT.md](markdown/DEVELOPMENT.md).
 
 ## Testing
 
@@ -235,7 +235,6 @@ cp target/release/testsmith-nvim /usr/local/bin/
 - [ ] Config file support (.testsmithrc)
 - [ ] Additional language support (Python, Go, C#)
 - [ ] Custom template support
-- [ ] Integration with language servers
 - [ ] Watch mode for automatic test detection
 - [ ] Test runner integration
 
@@ -297,4 +296,4 @@ Created with ❤️ for Java developers using Neovim.
 
 ---
 
-**Ready to get started?** See [PLUGIN_README.md](PLUGIN_README.md) for detailed plugin documentation.
+**Ready to get started?** See [markdown/QUICK_START.md](markdown/QUICK_START.md) for building and distribution, or [markdown/DEVELOPMENT.md](markdown/DEVELOPMENT.md) for development setup.
